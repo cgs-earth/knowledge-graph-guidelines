@@ -83,6 +83,7 @@ Example declaration:
 
 pwssab:WaterServiceAreaBoundary
     a owl:Class .
+```
 
 ## 5. Slash namespaces
 
