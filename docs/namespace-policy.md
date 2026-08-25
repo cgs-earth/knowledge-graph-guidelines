@@ -103,17 +103,29 @@ https://ontology.cgsearth.org/example#ClassB
 ```
 
 
-## 6. Prefix policy
 
-Every ontology **MUST** declare one preferred prefix. Prefixes should be short, recognizable, and unique within the CGS registry.
 
-Examples:
 
-| Ontology | Preferred prefix |
-|---|---|
-| PWSSAB | `pwssab` |
-| CGS mapping ontology | `cgsm` |
-| CGS annotation ontology | `cgsa` |
-| PWSSAB–GeoConnex alignment | `pwssab-gcx` |
+## 9. Instance identifier construction
 
-Prefixes are abbreviations used in RDF serializations and queries; they are not globally unique identifiers and must not replace full IRIs in governance records.
+Instance IRIs should be deterministic and based on stable source identifiers where possible:
+
+```text
+https://data.cgsearth.org/pwssab/resource/AZ0410100
+```
+
+When a source identifier is not globally unique, the IRI **MUST** include sufficient context to prevent collisions. Identifier-generation rules must document:
+
+- the source field or fields;
+- normalization and escaping rules;
+- case sensitivity;
+- handling of missing identifiers; and
+- treatment of changed or reassigned source identifiers.
+
+Blank nodes should be reserved for resources that do not require persistent identity outside their containing graph.
+
+
+## References
+
+- [W3C Best Practice Recipes for Publishing RDF Vocabularies](https://www.w3.org/TR/swbp-vocab-pub/)
+- [Cool URIs for the Semantic Web](https://www.w3.org/TR/cooluris/)
