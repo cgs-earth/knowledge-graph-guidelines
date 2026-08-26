@@ -11,8 +11,11 @@ This document defines the architecture for ontologies, mappings, and RDF instanc
 - support project-specific extensions without destabilizing reusable models; and
 - provide consistent namespace, dependency, publication, and versioning conventions.
 
-\
-<img width="6788" height="5620" alt="Ontology hierarchy" src="https://github.com/user-attachments/assets/2dee567f-a414-4e38-90c7-cebe25f2a0d2" />
+
+<!-- <img width="3220" height="2900" alt="Ontology hierarchy (1)" src="https://github.com/user-attachments/assets/d62bbdb4-9cec-4049-b61a-b8b2040eba59" /> -->
+<p align="center">
+<img width="65%" alt="Ontology hierarchy (2)" src="https://github.com/user-attachments/assets/2d6594db-6bf8-4148-945d-2ad01ae55460" />
+</p>
 
 ## Architectural principles
 ### Namespace authority follows governance
